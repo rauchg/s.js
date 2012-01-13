@@ -8,6 +8,6 @@
     s.extend();
     'http://%s:%d'.s('localhost', 40);
 
-- Node/browser compatible
+- Node/browser compatible. Published as `s` on npm.
 - Opt-in String.prototype extension
 - Only supports `%s` and `%d`. Escape `%` as `%%`.
