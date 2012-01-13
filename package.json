@@ -1,0 +1,11 @@
+{
+    "name": "s"
+  , "description": "tiny javascript sprintf"
+  , "tags": ["string", "sprintf"]
+  , "main": "./s"
+  , "version": "0.1.0"
+  , "devDependencies": {
+        "mocha": "*"
+      , "expect.js": "*"
+    }
+}

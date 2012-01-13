@@ -1,0 +1,13 @@
+
+# s.js: minimalistic javascript sprintf().
+
+    // standalone
+    s('http://%s:%d', 'localhost', 40)
+
+    // extend String.prototype
+    s.extend();
+    'http://%s:%d'.s('localhost', 40);
+
+- Node/browser compatible
+- Opt-in String.prototype extension
+- Only supports `%s` and `%d`. Escape `%` as `%%`.
