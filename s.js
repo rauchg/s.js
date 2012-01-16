@@ -16,12 +16,18 @@ Only supports `%s` and `%d`. Escape `%` as `%%`.
 **/
 
 (function (g) {
+  var j = 'undefined' != typeof JSON ? JSON.stringify : String;
+
   function s (str) {
     var i = 1, args = arguments;
-    return String(str).replace(/%?%(d|s)/g, function (symbol, type) {
+    return String(str).replace(/%?%(d|s|j)/g, function (symbol, type) {
       if ('%' == symbol[1]) return symbol;
       var arg = args[i++];
-      return 'd' == type ? Number(arg) : String(arg);
+      switch (type) {
+        case 'd': return Number(arg);
+        case 'j': return j(arg);
+      }
+      return String(arg);
     });
   };
 
