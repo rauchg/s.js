@@ -25,4 +25,8 @@ describe('s.js', function () {
     expect('http://%s:%d'.s('localhost', 40)).to.be('http://localhost:40');
   });
 
+  it('should jsonify', function () {
+    expect('hello %j'.s({ hello: 'world' })).to.be('hello {"hello":"world"}');
+  });
+
 });
