@@ -3,7 +3,7 @@
   , "description": "tiny javascript sprintf"
   , "tags": ["string", "sprintf"]
   , "main": "./s"
-  , "version": "0.1.0"
+  , "version": "0.1.1"
   , "devDependencies": {
         "mocha": "*"
       , "expect.js": "*"

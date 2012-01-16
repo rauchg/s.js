@@ -4,6 +4,7 @@
 ```js
 // standalone
 s('http://%s:%d', 'localhost', 40)
+s('got %j', { this: 'will be JSON.stringified' })
 
 // extend String.prototype
 s.extend();

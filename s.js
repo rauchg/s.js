@@ -1,20 +1,4 @@
 
-/**
-
-# s.js: minimalistic javascript sprintf().
-
-    // standalone
-    s('http://%s:%d', 'localhost', 40)
-    s('got %j', { this: 'will be JSON.stringified' })
-
-    // extend String.prototype
-    s.extend();
-    'http://%s:%d'.s('localhost', 40);
-
-Only supports `%s` and `%d`. Escape `%` as `%%`.
-
-**/
-
 (function (g) {
   var j = 'undefined' != typeof JSON ? JSON.stringify : String;
 
